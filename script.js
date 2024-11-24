@@ -1,6 +1,7 @@
 function getFormvalue() {
     //Write your code here
-	let fname = document.getElementById('fname);
-	let lname = document.getElementById('lname');
-	window.alert(fname+" "+lname);
+	const form = document.querySelector("form1");
+	const firstName = form.elements["fname"].value;
+	const lastName = form.elements["lname"].value;
+	alert(`${firstName} ${lastName}`);
 }
